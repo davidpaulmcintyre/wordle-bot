@@ -5,13 +5,13 @@ This repo uses a browser automation to cheat and solve the [Wordle daily word pu
 [Some solutions](https://github.com/TylerGlaiel/wordlebot) use a vocabulary list to guess the optimal word for each of the 6 entries allowed. Using the provided vocabulary list, this type of solution enters an optimal first word such as 'ROATE' and then filters the vocabulary list based on which letters were perfect or partial matches.
 
 In contrast, my approach is to shamelessly cheat and provide a successful answer on the first guess.  The solution to the puzzle is in the webpage's source code in localStorage, which can be obtained with:
-
-``const solution = JSON.parse(localStorage.getItem('gameState')).solution
-
+``
+const solution = JSON.parse(localStorage.getItem('gameState')).solution
+``
 To run this application:
 ``npm install
-``npm run bot
-
+npm run bot
+``
 The script uses the head-ful playwright test automation tool to:
 - open the wordle homepage
 - close the modal overlay
