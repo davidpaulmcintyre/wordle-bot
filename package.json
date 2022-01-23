@@ -1,0 +1,20 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "bot to solve wordle problems",
+  "main": "main.js",
+  "scripts": {
+    "bot": "npx playwright test --headed"
+  },
+  "keywords": [
+    "wordle",
+    "playwright",
+    "test"
+  ],
+  "author": "David McIntyre",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.18.0",
+    "playwright": "^1.18.0"
+  }
+}
